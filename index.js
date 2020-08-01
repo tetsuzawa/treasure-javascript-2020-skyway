@@ -38,6 +38,11 @@
         setEventListener(mediaConnection);
     }); 
 
+    document.getElementById('copy-id').onclick = () => {
+        const id = document.getElementById('my-id').value;
+        document.execCommand('Copy');
+        alert('IDをコピーしました');
+    }
 
 })();
 
